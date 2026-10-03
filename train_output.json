@@ -1,0 +1,376 @@
+{
+  "metadata": {
+    "source_file": "raw_data.csv",
+    "raw_rows": 108001,
+    "aggregated_rows": 10801,
+    "clean_rows": 10314,
+    "model_rows": 10290,
+    "valid_fraction": 0.9549115822609018,
+    "resample_seconds": 10,
+    "target": "tail (尾部烟道出口 NOx, mg/Nm3)",
+    "best_tree_model": "random_forest",
+    "base_features": [
+      "sp",
+      "noin_a",
+      "noin_b",
+      "noout_a",
+      "noout_b",
+      "nh3_a",
+      "nh3_b",
+      "valve_a",
+      "valve_b",
+      "auto",
+      "air",
+      "load",
+      "purge",
+      "coal_total",
+      "paf_total",
+      "temp_a",
+      "temp_b",
+      "nh3_total",
+      "noin_mean",
+      "noout_mean",
+      "removal_eff"
+    ],
+    "tree_features": [
+      "sp",
+      "sp_lag1",
+      "sp_lag3",
+      "sp_lag6",
+      "sp_lag12",
+      "sp_lag24",
+      "noin_a",
+      "noin_a_lag1",
+      "noin_a_lag3",
+      "noin_a_lag6",
+      "noin_a_lag12",
+      "noin_a_lag24",
+      "noin_b",
+      "noin_b_lag1",
+      "noin_b_lag3",
+      "noin_b_lag6",
+      "noin_b_lag12",
+      "noin_b_lag24",
+      "noout_a",
+      "noout_a_lag1",
+      "noout_a_lag3",
+      "noout_a_lag6",
+      "noout_a_lag12",
+      "noout_a_lag24",
+      "noout_b",
+      "noout_b_lag1",
+      "noout_b_lag3",
+      "noout_b_lag6",
+      "noout_b_lag12",
+      "noout_b_lag24",
+      "nh3_a",
+      "nh3_a_lag1",
+      "nh3_a_lag3",
+      "nh3_a_lag6",
+      "nh3_a_lag12",
+      "nh3_a_lag24",
+      "nh3_b",
+      "nh3_b_lag1",
+      "nh3_b_lag3",
+      "nh3_b_lag6",
+      "nh3_b_lag12",
+      "nh3_b_lag24",
+      "valve_a",
+      "valve_a_lag1",
+      "valve_a_lag3",
+      "valve_a_lag6",
+      "valve_a_lag12",
+      "valve_a_lag24",
+      "valve_b",
+      "valve_b_lag1",
+      "valve_b_lag3",
+      "valve_b_lag6",
+      "valve_b_lag12",
+      "valve_b_lag24",
+      "auto",
+      "auto_lag1",
+      "auto_lag3",
+      "auto_lag6",
+      "auto_lag12",
+      "auto_lag24",
+      "air",
+      "air_lag1",
+      "air_lag3",
+      "air_lag6",
+      "air_lag12",
+      "air_lag24",
+      "load",
+      "load_lag1",
+      "load_lag3",
+      "load_lag6",
+      "load_lag12",
+      "load_lag24",
+      "purge",
+      "purge_lag1",
+      "purge_lag3",
+      "purge_lag6",
+      "purge_lag12",
+      "purge_lag24",
+      "coal_total",
+      "coal_total_lag1",
+      "coal_total_lag3",
+      "coal_total_lag6",
+      "coal_total_lag12",
+      "coal_total_lag24",
+      "paf_total",
+      "paf_total_lag1",
+      "paf_total_lag3",
+      "paf_total_lag6",
+      "paf_total_lag12",
+      "paf_total_lag24",
+      "temp_a",
+      "temp_a_lag1",
+      "temp_a_lag3",
+      "temp_a_lag6",
+      "temp_a_lag12",
+      "temp_a_lag24",
+      "temp_b",
+      "temp_b_lag1",
+      "temp_b_lag3",
+      "temp_b_lag6",
+      "temp_b_lag12",
+      "temp_b_lag24",
+      "nh3_total",
+      "nh3_total_lag1",
+      "nh3_total_lag3",
+      "nh3_total_lag6",
+      "nh3_total_lag12",
+      "nh3_total_lag24",
+      "noin_mean",
+      "noin_mean_lag1",
+      "noin_mean_lag3",
+      "noin_mean_lag6",
+      "noin_mean_lag12",
+      "noin_mean_lag24",
+      "noout_mean",
+      "noout_mean_lag1",
+      "noout_mean_lag3",
+      "noout_mean_lag6",
+      "noout_mean_lag12",
+      "noout_mean_lag24",
+      "removal_eff",
+      "removal_eff_lag1",
+      "removal_eff_lag3",
+      "removal_eff_lag6",
+      "removal_eff_lag12",
+      "removal_eff_lag24",
+      "tail_lag1",
+      "tail_lag3",
+      "tail_lag6",
+      "tail_lag12",
+      "tail_lag24"
+    ],
+    "seq_features": [
+      "sp",
+      "noin_a",
+      "noin_b",
+      "noout_a",
+      "noout_b",
+      "nh3_a",
+      "nh3_b",
+      "valve_a",
+      "valve_b",
+      "auto",
+      "air",
+      "load",
+      "purge",
+      "coal_total",
+      "paf_total",
+      "temp_a",
+      "temp_b",
+      "nh3_total",
+      "noin_mean",
+      "noout_mean",
+      "removal_eff",
+      "tail"
+    ],
+    "split": {
+      "train": 7202,
+      "validation": 1544,
+      "test": 1544
+    },
+    "cleaning_rules": [
+      "outputs >=327.65 treated as analyzer sentinel",
+      "negative NH3 flows treated as invalid",
+      "10-second median aggregation",
+      "stable load >=100 MW and valid temperature/inlet/outlet signals"
+    ]
+  },
+  "metrics": {
+    "persistence_10s": {
+      "MAE": 0.15779860900325476,
+      "RMSE": 0.3416164907557786,
+      "R2": 0.9887599117545908,
+      "SMAPE_%": 0.4191072281527788,
+      "bias": -0.005233174795041936
+    },
+    "ridge": {
+      "val": {
+        "MAE": 0.45166024565696716,
+        "RMSE": 0.6397787645662761,
+        "R2": 0.9681698083877563,
+        "SMAPE_%": 1.3062700033187866,
+        "bias": -0.2361697405576706
+      },
+      "test": {
+        "MAE": 0.8492913246154785,
+        "RMSE": 0.9122108550053343,
+        "R2": 0.9198538661003113,
+        "SMAPE_%": 2.2777369022369385,
+        "bias": -0.8448875546455383
+      }
+    },
+    "extra_trees": {
+      "val": {
+        "MAE": 0.5320410511674876,
+        "RMSE": 0.8105566708137079,
+        "R2": 0.94890876512397,
+        "SMAPE_%": 1.5098496333526719,
+        "bias": 0.37691284358604515
+      },
+      "test": {
+        "MAE": 0.6625266950256545,
+        "RMSE": 0.7603438286052049,
+        "R2": 0.9443183472871134,
+        "SMAPE_%": 1.7415213480495313,
+        "bias": 0.6351609244802583
+      }
+    },
+    "random_forest": {
+      "val": {
+        "MAE": 0.3762007503391981,
+        "RMSE": 0.5472459685315131,
+        "R2": 0.9767113253990156,
+        "SMAPE_%": 1.0700742560590515,
+        "bias": 0.20128082472287123
+      },
+      "test": {
+        "MAE": 0.3015512633853413,
+        "RMSE": 0.4141437257634887,
+        "R2": 0.9834806011472053,
+        "SMAPE_%": 0.8033098921861751,
+        "bias": 0.09549922035582853
+      }
+    },
+    "hist_gradient_boosting": {
+      "val": {
+        "MAE": 1.0844635261710818,
+        "RMSE": 1.794963765224783,
+        "R2": 0.7494519639036364,
+        "SMAPE_%": 3.147422981174878,
+        "bias": -0.7474480472303514
+      },
+      "test": {
+        "MAE": 2.487154288092726,
+        "RMSE": 2.7536066266971018,
+        "R2": 0.26970914384140954,
+        "SMAPE_%": 6.937819941888609,
+        "bias": -2.378987509520635
+      }
+    },
+    "gru": {
+      "val": {
+        "MAE": 0.7325303554534912,
+        "RMSE": 1.123680294365761,
+        "R2": 0.9018470048904419,
+        "SMAPE_%": 2.0575406551361084,
+        "bias": 0.33060184121131897
+      },
+      "test": {
+        "MAE": 1.0052419900894165,
+        "RMSE": 1.1559338008412008,
+        "R2": 0.8713974952697754,
+        "SMAPE_%": 2.611619710922241,
+        "bias": 0.1880083531141281
+      },
+      "epochs": 58
+    }
+  },
+  "top_features": [
+    {
+      "feature": "tail_lag1",
+      "importance": 3.5217681862862853
+    },
+    {
+      "feature": "tail_lag3",
+      "importance": 0.20500644177310917
+    },
+    {
+      "feature": "noout_mean_lag6",
+      "importance": 0.03765074139711044
+    },
+    {
+      "feature": "noout_mean_lag12",
+      "importance": 0.012417244557342805
+    },
+    {
+      "feature": "noout_a_lag12",
+      "importance": 0.00971865617502661
+    },
+    {
+      "feature": "noout_a_lag6",
+      "importance": 0.005931331302238857
+    },
+    {
+      "feature": "removal_eff_lag6",
+      "importance": 0.003282496352180017
+    },
+    {
+      "feature": "noout_mean_lag3",
+      "importance": 0.0030136987671703502
+    },
+    {
+      "feature": "removal_eff_lag12",
+      "importance": 0.0020967575489553303
+    },
+    {
+      "feature": "removal_eff_lag1",
+      "importance": 0.002086722674997127
+    },
+    {
+      "feature": "noout_b_lag6",
+      "importance": 0.00195433791982233
+    },
+    {
+      "feature": "removal_eff_lag3",
+      "importance": 0.0018503216887689744
+    },
+    {
+      "feature": "noout_mean_lag1",
+      "importance": 0.0012970989306660685
+    },
+    {
+      "feature": "noout_a_lag3",
+      "importance": 0.0010909921857651383
+    },
+    {
+      "feature": "removal_eff",
+      "importance": 0.0010118555376181088
+    },
+    {
+      "feature": "noout_mean",
+      "importance": 0.0007336152021894249
+    },
+    {
+      "feature": "noout_b",
+      "importance": 0.0006716360905011515
+    },
+    {
+      "feature": "temp_b_lag24",
+      "importance": 0.0005540705381512218
+    },
+    {
+      "feature": "temp_b_lag1",
+      "importance": 0.0005128029960883435
+    },
+    {
+      "feature": "noin_a_lag24",
+      "importance": 0.00045469022241927115
+    }
+  ]
+}

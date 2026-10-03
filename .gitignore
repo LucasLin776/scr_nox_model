@@ -1,0 +1,17 @@
+# Local secrets and environment
+.env
+.env.*
+!.env.example
+
+# Python caches and local outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+
+# Temporary Office lock files
+~$*
+
+# Local rendered preview cache
+rendered_report/

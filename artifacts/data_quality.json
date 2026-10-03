@@ -1,0 +1,49 @@
+{
+  "raw_rows": 108001,
+  "time_start": "2024-09-26 12:17:16",
+  "time_end": "2024-09-27 18:17:16",
+  "duration_hours": 30.0,
+  "duplicate_header_columns": [
+    "AI_NOXA_AMMFLOW",
+    "DI_NOXA_IN_MAIN"
+  ],
+  "sentinel_counts": {
+    "tail_327_67": 2927,
+    "noout_a_327_67": 3421,
+    "noout_b_327_67": 2735,
+    "nh3_a_negative": 4890,
+    "nh3_b_negative": 4901
+  },
+  "load_bins": {
+    "0-100": {
+      "rows": 2053,
+      "tail_mean": 327.3205504140283,
+      "tail_valid_fraction": 0.04042864101315149
+    },
+    "100-200": {
+      "rows": 4717,
+      "tail_mean": 213.3829963703625,
+      "tail_valid_fraction": 0.7971168115327538
+    },
+    "200-300": {
+      "rows": 35097,
+      "tail_mean": 34.8290823172066,
+      "tail_valid_fraction": 1.0
+    },
+    "300-400": {
+      "rows": 930,
+      "tail_mean": 27.096106774193547,
+      "tail_valid_fraction": 1.0
+    },
+    "400-500": {
+      "rows": 19683,
+      "tail_mean": 35.58100679926841,
+      "tail_valid_fraction": 1.0
+    },
+    "500-600": {
+      "rows": 45521,
+      "tail_mean": 36.74095901254366,
+      "tail_valid_fraction": 1.0
+    }
+  }
+}

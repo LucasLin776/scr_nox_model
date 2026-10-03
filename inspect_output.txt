@@ -1,0 +1,462 @@
+sheets ['靖海电厂1号600MW机组脱硝相关数据（0MW-600MW)'] nrows 108001 ncols 32
+0 日期时间
+1 时间(秒)
+2 AI_NOX_CHIM_PV: 尾部烟道出口NOX浓度(净烟气)(mg/Nm3)
+3 AI_NOX_CHIM_SP:净烟气模式下总NOX设定值(mg/Nm3)
+4 AI_NOXA_NOX_IN:A侧SCR入口烟道NOX浓度(mg/Nm3)
+5 AI_NOXA_NOX_OUT_PV:A侧SCR出口烟道NOX浓度(mg/Nm3)
+6 AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)
+7 AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)__dup2
+8 AI_NOXA_CO:A侧氨气流量控制阀指令(%)
+9 AI_NOXB_NOX_IN:B侧SCR入口烟道NOX浓度(mg/Nm3)
+10 AI_NOXB_NOX_OUT_PV:B侧SCR出口烟道NOX浓度(mg/Nm3)
+11 AI_NOXB_AMMFLOW:B侧SCR氨气流量(kg/h)
+12 AI_NOXB_CO:B侧氨气流量控制阀指令(%)
+13 DI_NOXA_AUTO:脱硝A先控 MA自动
+14 AI_TAF:总风量(t/h)
+15 AI_MWD:负荷指令(MW)
+16 DI_NOXA_IN_MAIN:SCR反应器A入口反吹
+17 AI_AFCF:A给煤机给煤量(t/h)
+18 AI_BFCF:B给煤机给煤量(t/h)
+19 AI_CFCF:C给煤机给煤量(t/h)
+20 AI_DFCF:D给煤机给煤量(t/h)
+21 AI_EFCF:E给煤机给煤量(t/h)
+22 AI_FFCF:F给煤机给煤量(t/h)
+23 AI_MA_PAF:A磨煤机入口一次风量(t/h)
+24 AI_MB_PAF:B磨煤机入口一次风量(t/h)
+25 AI_MC_PAF:C磨煤机入口一次风量(t/h)
+26 AI_MD_PAF:D磨煤机入口一次风量(t/h)
+27 AI_ME_PAF:E磨煤机入口一次风量(t/h)
+28 AI_MF_PAF:F磨煤机入口一次风量(t/h)
+29 AI_NOXA_TEMP_IN:A侧脱硝入口烟气温度(℃)
+30 AI_NOXB_TEMP_IN:B侧脱硝入口烟气温度(℃)
+31 DI_NOXA_IN_MAIN:SCR反应器A入口反吹__dup2
+time range 2024-09-26 12:17:16 2024-09-27 18:17:16 seconds 0 86399 unique sec 86400
+[
+  {
+    "index": 0,
+    "col": "日期时间",
+    "missing": 0,
+    "nunique": 108001,
+    "min": 1727353036000000.0,
+    "max": 1727461036000000.0,
+    "mean": 1727407036000000.0,
+    "std": 31177347548.60757,
+    "q01": 1727354116000000.0,
+    "q99": 1727459956000000.0
+  },
+  {
+    "index": 1,
+    "col": "时间(秒)",
+    "missing": 0,
+    "nunique": 86400,
+    "min": 0.0,
+    "max": 86399.0,
+    "mean": 36719.36000592587,
+    "std": 25950.023440395395,
+    "q01": 540.0,
+    "q99": 85319.0
+  },
+  {
+    "index": 2,
+    "col": "AI_NOX_CHIM_PV: 尾部烟道出口NOX浓度(净烟气)(mg/Nm3)",
+    "missing": 0,
+    "nunique": 1976,
+    "min": 6.090011,
+    "max": 327.67,
+    "mean": 49.06379123624781,
+    "std": 59.45570457414932,
+    "q01": 6.730011,
+    "q99": 327.67
+  },
+  {
+    "index": 3,
+    "col": "AI_NOX_CHIM_SP:净烟气模式下总NOX设定值(mg/Nm3)",
+    "missing": 0,
+    "nunique": 12,
+    "min": 32.00001,
+    "max": 46.00001,
+    "mean": 36.221959796761126,
+    "std": 2.377824258005855,
+    "q01": 32.00001,
+    "q99": 46.00001
+  },
+  {
+    "index": 4,
+    "col": "AI_NOXA_NOX_IN:A侧SCR入口烟道NOX浓度(mg/Nm3)",
+    "missing": 0,
+    "nunique": 2521,
+    "min": 209.2,
+    "max": 529.1,
+    "mean": 304.64738103999036,
+    "std": 52.40151077158113,
+    "q01": 229.5999,
+    "q99": 434.5999
+  },
+  {
+    "index": 5,
+    "col": "AI_NOXA_NOX_OUT_PV:A侧SCR出口烟道NOX浓度(mg/Nm3)",
+    "missing": 0,
+    "nunique": 6805,
+    "min": 2.86001,
+    "max": 327.67,
+    "mean": 48.649582210377694,
+    "std": 60.97292349470475,
+    "q01": 3.28001,
+    "q99": 327.67
+  },
+  {
+    "index": 6,
+    "col": "AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)",
+    "missing": 0,
+    "nunique": 2530,
+    "min": -2.93999,
+    "max": 124.65,
+    "mean": 50.42233228911214,
+    "std": 15.781955997023848,
+    "q01": -2.82999,
+    "q99": 73.73001
+  },
+  {
+    "index": 7,
+    "col": "AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)__dup2",
+    "missing": 0,
+    "nunique": 2530,
+    "min": -2.93999,
+    "max": 124.65,
+    "mean": 50.42233228911214,
+    "std": 15.781955997023848,
+    "q01": -2.82999,
+    "q99": 73.73001
+  },
+  {
+    "index": 8,
+    "col": "AI_NOXA_CO:A侧氨气流量控制阀指令(%)",
+    "missing": 0,
+    "nunique": 2774,
+    "min": 1.037602e-05,
+    "max": 58.36001,
+    "mean": 30.272113053049,
+    "std": 8.85581813926507,
+    "q01": 1.037602e-05,
+    "q99": 42.40001
+  },
+  {
+    "index": 9,
+    "col": "AI_NOXB_NOX_IN:B侧SCR入口烟道NOX浓度(mg/Nm3)",
+    "missing": 0,
+    "nunique": 1465,
+    "min": 209.3999,
+    "max": 504.7,
+    "mean": 313.7499568883622,
+    "std": 45.3543820853997,
+    "q01": 231.7,
+    "q99": 422.2
+  },
+  {
+    "index": 10,
+    "col": "AI_NOXB_NOX_OUT_PV:B侧SCR出口烟道NOX浓度(mg/Nm3)",
+    "missing": 0,
+    "nunique": 6879,
+    "min": 1.037602e-05,
+    "max": 327.67,
+    "mean": 48.12649585248914,
+    "std": 59.18467915656029,
+    "q01": 0.7200104,
+    "q99": 327.67
+  },
+  {
+    "index": 11,
+    "col": "AI_NOXB_AMMFLOW:B侧SCR氨气流量(kg/h)",
+    "missing": 0,
+    "nunique": 2619,
+    "min": -2.93999,
+    "max": 90.97001,
+    "mean": 45.44247812534143,
+    "std": 16.171714387149866,
+    "q01": -2.87999,
+    "q99": 75.03001
+  },
+  {
+    "index": 12,
+    "col": "AI_NOXB_CO:B侧氨气流量控制阀指令(%)",
+    "missing": 0,
+    "nunique": 2952,
+    "min": 1.037602e-05,
+    "max": 45.76001,
+    "mean": 27.237458651676494,
+    "std": 8.500759764191592,
+    "q01": 1.037602e-05,
+    "q99": 39.69001
+  },
+  {
+    "index": 13,
+    "col": "DI_NOXA_AUTO:脱硝A先控 MA自动",
+    "missing": 0,
+    "nunique": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.944620883139971,
+    "std": 0.22871981691297594,
+    "q01": 0.0,
+    "q99": 1.0
+  },
+  {
+    "index": 14,
+    "col": "AI_TAF:总风量(t/h)",
+    "missing": 0,
+    "nunique": 2956,
+    "min": 587.5810578,
+    "max": 1614.093612,
+    "mean": 1278.8532934701288,
+    "std": 257.51065620536525,
+    "q01": 742.2033876,
+    "q99": 1614.093612
+  },
+  {
+    "index": 15,
+    "col": "AI_MWD:负荷指令(MW)",
+    "missing": 0,
+    "nunique": 2356,
+    "min": 0.09995117,
+    "max": 598.9999,
+    "mean": 415.43048186209637,
+    "std": 152.5452510830382,
+    "q01": 0.1999512,
+    "q99": 598.4999
+  },
+  {
+    "index": 16,
+    "col": "DI_NOXA_IN_MAIN:SCR反应器A入口反吹",
+    "missing": 0,
+    "nunique": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.046453273580800175,
+    "std": 0.210465619749911,
+    "q01": 0.0,
+    "q99": 1.0
+  },
+  {
+    "index": 17,
+    "col": "AI_AFCF:A给煤机给煤量(t/h)",
+    "missing": 0,
+    "nunique": 2183,
+    "min": 25.20001,
+    "max": 55.88001,
+    "mean": 44.71965435514486,
+    "std": 8.55569678388469,
+    "q01": 29.03001,
+    "q99": 55.66001
+  },
+  {
+    "index": 18,
+    "col": "AI_BFCF:B给煤机给煤量(t/h)",
+    "missing": 0,
+    "nunique": 199,
+    "min": 1.037602e-05,
+    "max": 36.19001,
+    "mean": 11.697738488157595,
+    "std": 14.441157936541675,
+    "q01": 1.037602e-05,
+    "q99": 33.28001
+  },
+  {
+    "index": 19,
+    "col": "AI_CFCF:C给煤机给煤量(t/h)",
+    "missing": 0,
+    "nunique": 1959,
+    "min": 31.28001,
+    "max": 55.60001,
+    "mean": 46.15547476421515,
+    "std": 6.608563177519055,
+    "q01": 34.53001,
+    "q99": 55.50001
+  },
+  {
+    "index": 20,
+    "col": "AI_DFCF:D给煤机给煤量(t/h)",
+    "missing": 0,
+    "nunique": 2196,
+    "min": 1.037602e-05,
+    "max": 55.99001,
+    "mean": 42.5826503760724,
+    "std": 14.250043479754641,
+    "q01": 1.037602e-05,
+    "q99": 55.53001
+  },
+  {
+    "index": 21,
+    "col": "AI_EFCF:E给煤机给煤量(t/h)",
+    "missing": 0,
+    "nunique": 2495,
+    "min": 1.037602e-05,
+    "max": 55.57001,
+    "mean": 26.565882224957576,
+    "std": 22.31822122859379,
+    "q01": 1.037602e-05,
+    "q99": 55.32001
+  },
+  {
+    "index": 22,
+    "col": "AI_FFCF:F给煤机给煤量(t/h)",
+    "missing": 0,
+    "nunique": 2219,
+    "min": 1.037602e-05,
+    "max": 56.03001,
+    "mean": 39.4458865315923,
+    "std": 8.707501810326876,
+    "q01": 1.037602e-05,
+    "q99": 53.02001
+  },
+  {
+    "index": 23,
+    "col": "AI_MA_PAF:A磨煤机入口一次风量(t/h)",
+    "missing": 0,
+    "nunique": 2336,
+    "min": 84.61001,
+    "max": 110.35,
+    "mean": 96.22073400699993,
+    "std": 5.19028295948557,
+    "q01": 86.83001,
+    "q99": 106.43
+  },
+  {
+    "index": 24,
+    "col": "AI_MB_PAF:B磨煤机入口一次风量(t/h)",
+    "missing": 0,
+    "nunique": 2081,
+    "min": 1.037602e-05,
+    "max": 105.96,
+    "mean": 13.813946006798874,
+    "std": 30.901906707334103,
+    "q01": 1.037602e-05,
+    "q99": 92.80001
+  },
+  {
+    "index": 25,
+    "col": "AI_MC_PAF:C磨煤机入口一次风量(t/h)",
+    "missing": 0,
+    "nunique": 2172,
+    "min": 89.77001,
+    "max": 114.94,
+    "mean": 100.24911670743788,
+    "std": 3.57815903825147,
+    "q01": 93.40001,
+    "q99": 110.97
+  },
+  {
+    "index": 26,
+    "col": "AI_MD_PAF:D磨煤机入口一次风量(t/h)",
+    "missing": 0,
+    "nunique": 3420,
+    "min": 1.037602e-05,
+    "max": 124.01,
+    "mean": 85.63720096737413,
+    "std": 22.918278663700516,
+    "q01": 1.037602e-05,
+    "q99": 113.53
+  },
+  {
+    "index": 27,
+    "col": "AI_ME_PAF:E磨煤机入口一次风量(t/h)",
+    "missing": 0,
+    "nunique": 2359,
+    "min": 1.037602e-05,
+    "max": 127.27,
+    "mean": 51.4438169369788,
+    "std": 41.838348154806674,
+    "q01": 1.037602e-05,
+    "q99": 96.26001
+  },
+  {
+    "index": 28,
+    "col": "AI_MF_PAF:F磨煤机入口一次风量(t/h)",
+    "missing": 0,
+    "nunique": 2628,
+    "min": 70.19001,
+    "max": 129.48,
+    "mean": 84.68066773076174,
+    "std": 5.730074404110895,
+    "q01": 76.66001,
+    "q99": 111.73
+  },
+  {
+    "index": 29,
+    "col": "AI_NOXA_TEMP_IN:A侧脱硝入口烟气温度(℃)",
+    "missing": 0,
+    "nunique": 1272,
+    "min": 247.3999,
+    "max": 374.5999,
+    "mean": 347.1715264349404,
+    "std": 25.910465422888315,
+    "q01": 248.7,
+    "q99": 373.5999
+  },
+  {
+    "index": 30,
+    "col": "AI_NOXB_TEMP_IN:B侧脱硝入口烟气温度(℃)",
+    "missing": 0,
+    "nunique": 943,
+    "min": 270.8,
+    "max": 365.8,
+    "mean": 346.3535952333775,
+    "std": 18.473140751368785,
+    "q01": 272.2,
+    "q99": 363.7
+  },
+  {
+    "index": 31,
+    "col": "DI_NOXA_IN_MAIN:SCR反应器A入口反吹__dup2",
+    "missing": 0,
+    "nunique": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.046453273580800175,
+    "std": 0.210465619749911,
+    "q01": 0.0,
+    "q99": 1.0
+  }
+]
+
+TARGET 2 AI_NOX_CHIM_PV: 尾部烟道出口NOX浓度(净烟气)(mg/Nm3)
+AI_NOX_CHIM_SP:净烟气模式下总NOX设定值(mg/Nm3)     1.000000
+时间(秒)                                   -0.316110
+AI_NOXA_NOX_IN:A侧SCR入口烟道NOX浓度(mg/Nm3)   -0.314962
+AI_MB_PAF:B磨煤机入口一次风量(t/h)                0.305377
+AI_MA_PAF:A磨煤机入口一次风量(t/h)               -0.258279
+AI_NOXB_NOX_IN:B侧SCR入口烟道NOX浓度(mg/Nm3)   -0.252227
+AI_AFCF:A给煤机给煤量(t/h)                     0.241782
+AI_CFCF:C给煤机给煤量(t/h)                     0.213099
+AI_MD_PAF:D磨煤机入口一次风量(t/h)               -0.191423
+AI_TAF:总风量(t/h)                          0.187770
+AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)__dup2   -0.174011
+AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)         -0.174011
+
+TARGET 5 AI_NOXA_NOX_OUT_PV:A侧SCR出口烟道NOX浓度(mg/Nm3)
+AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)              1.000000
+AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)__dup2        1.000000
+AI_NOXA_CO:A侧氨气流量控制阀指令(%)                    0.981396
+AI_NOXB_CO:B侧氨气流量控制阀指令(%)                    0.958883
+AI_NOXB_AMMFLOW:B侧SCR氨气流量(kg/h)              0.945005
+AI_NOXB_TEMP_IN:B侧脱硝入口烟气温度(℃)                0.706611
+AI_NOXA_NOX_OUT_PV:A侧SCR出口烟道NOX浓度(mg/Nm3)   -0.690072
+AI_NOX_CHIM_PV: 尾部烟道出口NOX浓度(净烟气)(mg/Nm3)    -0.685324
+AI_NOXB_NOX_OUT_PV:B侧SCR出口烟道NOX浓度(mg/Nm3)   -0.671716
+AI_NOXB_NOX_IN:B侧SCR入口烟道NOX浓度(mg/Nm3)        0.671227
+AI_NOXA_TEMP_IN:A侧脱硝入口烟气温度(℃)                0.656251
+DI_NOXA_AUTO:脱硝A先控 MA自动                      0.655291
+
+TARGET 10 AI_NOXB_NOX_OUT_PV:B侧SCR出口烟道NOX浓度(mg/Nm3)
+AI_NOXB_AMMFLOW:B侧SCR氨气流量(kg/h)             1.000000
+AI_NOXB_CO:B侧氨气流量控制阀指令(%)                   0.987768
+AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)             0.945005
+AI_NOXA_AMMFLOW:A侧SCR氨气流量(kg/h)__dup2       0.945005
+AI_NOXA_CO:A侧氨气流量控制阀指令(%)                   0.941823
+AI_BFCF:B给煤机给煤量(t/h)                        0.706816
+AI_NOXA_TEMP_IN:A侧脱硝入口烟气温度(℃)               0.685223
+AI_NOXB_TEMP_IN:B侧脱硝入口烟气温度(℃)               0.685076
+AI_MWD:负荷指令(MW)                             0.669010
+AI_FFCF:F给煤机给煤量(t/h)                        0.659599
+AI_TAF:总风量(t/h)                             0.629735
+AI_NOX_CHIM_PV: 尾部烟道出口NOX浓度(净烟气)(mg/Nm3)   -0.615181

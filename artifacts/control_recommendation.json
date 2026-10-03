@@ -1,0 +1,23 @@
+{
+  "current": {
+    "dt": "2024-09-27 18:17:10",
+    "load_mw": 543.4,
+    "setpoint": 42.00001,
+    "nh3_a": 63.30001,
+    "nh3_b": 59.21001,
+    "predicted_tail_nox": 41.43013414338468
+  },
+  "recommendation": {
+    "mult_a": 0.8,
+    "mult_b": 0.8,
+    "nh3_a": 50.640008,
+    "nh3_b": 47.368008,
+    "total_nh3": 98.008016,
+    "pred_tail_nox": 41.432061230691644,
+    "target_setpoint": 42.00001,
+    "meets_setpoint": true
+  },
+  "candidate_count": 625,
+  "feasible_count": 625,
+  "constraint": "predicted tail NOx <= setpoint + 2 mg/Nm3; NH3 multipliers 0.80–1.20"
+}
